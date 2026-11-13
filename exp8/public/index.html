@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leave Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Leave Management System</h1>
+
+  <h2>Apply for Leave</h2>
+
+  <form id="leaveForm">
+    <input id="empId" placeholder="Employee ID" required>
+
+    <select id="type">
+      <option value="Casual">Casual Leave</option>
+      <option value="Medical">Medical Leave</option>
+    </select>
+
+    <input id="days" type="number" placeholder="Number of Days" min="1" required>
+
+    <button type="submit">Apply</button>
+  </form>
+
+  <h2>Check Leave Balance</h2>
+
+  <input id="checkId" placeholder="Employee ID">
+  <button onclick="checkBalance()">Check Balance</button>
+
+  <p id="result"></p>
+  <p id="message"></p>
+
+  <script src="app.js"></script>
+</body>
+</html>
